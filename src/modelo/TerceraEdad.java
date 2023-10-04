@@ -1,3 +1,4 @@
+package modelo;
 
 public class TerceraEdad extends Pasajero{
     public TerceraEdad(String rut, String nombre, String telefonoContacto, String nombreContacto) {

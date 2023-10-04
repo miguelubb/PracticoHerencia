@@ -1,3 +1,6 @@
+
+package test;
+import modelo.*;
 import java.util.ArrayList;
 
 public class ViajeTest {

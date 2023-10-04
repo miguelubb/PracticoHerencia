@@ -1,3 +1,4 @@
+package modelo;
 
 public class Escolar extends Pasajero{
     String nivelEscolar;
@@ -9,12 +10,12 @@ public class Escolar extends Pasajero{
 
     @Override
     public long tarifa(long precioNormal) {
-        double desc=0.0;
-        switch (nivelEscolar){
-            case "basica": desc=1;break;
-            case "media": desc=0.60;break;
-            case "universitaria": desc=0.5;break;
-        }
+        double desc = switch (nivelEscolar) {
+            case "basica" -> 1;
+            case "media" -> 0.60;
+            case "universitaria" -> 0.5;
+            default -> 0.0;
+        };
         return (long)(precioNormal*(1-desc));
     }
 }

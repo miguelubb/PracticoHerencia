@@ -1,3 +1,5 @@
+package modelo;
+
 import java.util.Objects;
 
 public abstract class Pasajero {
@@ -50,8 +52,7 @@ public abstract class Pasajero {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Pasajero)) return false;
-        Pasajero pasajero = (Pasajero) o;
+        if (!(o instanceof Pasajero pasajero)) return false;
         return rut.equals(pasajero.rut);
     }
 

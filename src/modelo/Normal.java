@@ -1,3 +1,4 @@
+package modelo;
 
 public class Normal extends Pasajero{
     public Normal(String rut, String nombre, String telefonoContacto, String nombreContacto) {

@@ -1,3 +1,5 @@
+package modelo;
+
 import java.util.ArrayList;
 
 public class Viaje {
@@ -86,5 +88,8 @@ public class Viaje {
         return misPasajeros.remove(p);
     }
 
+    public int disponibles(){
+        return capacidad-misPasajeros.size();
+    }
 
 }
